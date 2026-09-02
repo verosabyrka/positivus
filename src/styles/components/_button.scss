@@ -16,6 +16,10 @@
     background-color: var(--color-accent);
   }
 
+  &:active {
+    scale: 0.97;
+  }
+
   &--transparent {
     color: var(--color-dark);
     background-color: transparent;
