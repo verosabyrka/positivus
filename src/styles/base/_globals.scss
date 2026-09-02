@@ -4,6 +4,11 @@ html {
   scrollbar-color: var(--color-dark) var(--color-gray);
 }
 
+::selection {
+  color: var(--color-dark);
+  background-color: var(--color-accent);
+}
+
 ::-webkit-scrollbar {
   width: 10px;
 }
