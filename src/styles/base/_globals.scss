@@ -1,7 +1,8 @@
 @use '@/styles/helpers' as *;
 
 html {
-  scrollbar-color: var(--color-dark) var(--color-gray);
+  scrollbar-width: thin;
+  scrollbar-color: var(--color-dark) transparent;
 }
 
 ::selection {
@@ -10,17 +11,17 @@ html {
 }
 
 ::-webkit-scrollbar {
-  width: 10px;
+  width: 8px;
+  height: 8px;
 }
 
 ::-webkit-scrollbar-track {
-  background-color: var(--color-gray);
+  background-color: transparent;
 }
 
 ::-webkit-scrollbar-thumb {
   background-color: var(--color-dark);
-  border-radius: var(--border-radius-small);
-  border: 2px solid var(--color-gray);
+  border-radius: 100px;
 
   &:hover {
     background-color: var(--color-accent);
